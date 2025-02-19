@@ -32,7 +32,8 @@ h1 {
 }
 
 .choices img {
-    width: 70px;
+    width: 100px;
+    height: 95px;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
