@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Lizard Spock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+        <p>¡Elige una opción!</p>
+        
+        <div class="choices">
+            <img src="rock.png" alt="Rock" onclick="playGame('rock')">
+            <img src="paper.png" alt="Paper" onclick="playGame('paper')">
+            <img src="scissors.png" alt="Scissors" onclick="playGame('scissors')">
+            <img src="lizard.png" alt="Lizard" onclick="playGame('lizard')">
+            <img src="spock.png" alt="Spock" onclick="playGame('spock')">
+        </div>
+
+        <div class="result">
+            <h2 id="result-text">Haz tu elección...</h2>
+            <p>Tu puntuación: <span id="player-score">0</span></p>
+            <p>Puntuación de la CPU: <span id="cpu-score">0</span></p>
+        </div>
+
+        <button onclick="resetGame()">Reiniciar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
